@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#347742">
+  <meta name="description" content="Mera. Snacks deshidratados para perros y gatos. Tanda 01 abierta: pollo, hígado, cogote y taurina. Hecho en Argentina.">
+  <title>Mera — Tanda 01</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial Narrow,sans-serif' font-size='18' font-weight='700' fill='%23fff'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <p class="announce">Tanda 01 abierta · 13 y 14 de noviembre · CABA y GBA</p>
+
+  <header class="header">
+    <a class="logo" href="#top">Mera</a>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="#menu">El menú</a>
+      <a href="#pack">Tu pack</a>
+      <a href="#proceso">Cómo se hace</a>
+      <a href="#casa">En casa</a>
+    </nav>
+    <div class="header-actions">
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">
+        Menú
+      </button>
+      <button class="cart-btn" id="open-cart" type="button">
+        <span class="cart-label">Tu carrito</span>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="top">
+      <div class="wrap hero-copy">
+        <p class="kicker">Comida justa. Amor desmesurado.</p>
+        <h1>Esto y<br>nada más.</h1>
+        <p class="lede">Snacks deshidratados para perros y gatos. Lo que está escrito en el sobre es lo que hay adentro: pollo, hígado, grasa. La tanda 01 es chica. Cuando se acaba, se acaba.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#pack">Quiero la tanda</a>
+          <a class="textlink" href="#menu">Ver los snacks</a>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>50 g</dt>
+            <dd>Cada sobre, doypack</dd>
+          </div>
+          <div>
+            <dt>16 h</dt>
+            <dd>De deshidratado lento</dd>
+          </div>
+          <div>
+            <dt>4</dt>
+            <dd>Sabores en esta tanda</dd>
+          </div>
+        </dl>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/pelaje.jpg" width="1079" height="677" alt="Primer plano del pelaje cobrizo de un perro.">
+        <figcaption>Alimento equilibrado · Hecho en Arg.</figcaption>
+      </figure>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <p>Snacks de verdad ✦ Pollo, hígado y grasa ✦ Hecho en Argentina ✦ Deshidratado lento ✦ Para perros y gatos ✦ Tanda 01 abierta ✦ Mínimo 4 sobres ✦</p>
+        <p>Snacks de verdad ✦ Pollo, hígado y grasa ✦ Hecho en Argentina ✦ Deshidratado lento ✦ Para perros y gatos ✦ Tanda 01 abierta ✦ Mínimo 4 sobres ✦</p>
+      </div>
+    </div>
+
+    <section class="promise">
+      <div class="wrap promise-grid">
+        <div>
+          <p class="index">La promesa</p>
+          <h2>Lo que dice la etiqueta es lo que hay.</h2>
+        </div>
+        <div class="promise-copy">
+          <p>Mera tiene dos lecturas. Es la perra fiel de Icario, la que quedó hecha estrella. Y es el latín <em>merus</em>: puro, sin mezcla. El snack se queda con las dos.</p>
+          <p>Pollo, hígado vacuno, grasa vacuna. Se pica, se mezcla, se deshidrata despacio y se corta. Nada de relleno para inflar el sobre.</p>
+        </div>
+      </div>
+      <div class="promise-photos">
+        <figure>
+          <img src="assets/basset.jpg" width="832" height="1327" alt="Un basset mira a cámara desde muy cerca.">
+        </figure>
+        <figure>
+          <img src="assets/lengua.jpg" width="721" height="875" alt="Un perro se lame el hocico contra el cielo.">
+          <figcaption>Buenos Aires</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="index">01 / El menú</p>
+          <h2>La tanda,<br>en cuatro sabores.</h2>
+          <p class="section-lede">Todos salen del mismo oficio. Cambia el corte, no la idea. Elegí sueltos o armá el pack más abajo.</p>
+        </div>
+        <div class="cards" id="cards">
+          <article class="card" data-id="pollo" data-price="4900" data-stock="86" data-name="Pollo, hígado y grasa">
+            <div class="card-top">
+              <span>01</span>
+              <span class="stock" data-stock-label>En tanda</span>
+            </div>
+            <div class="pouch" style="--c:#D26945; --ink:#000">
+              <span class="pouch-brand">Mera</span>
+              <span class="pouch-lines">50 gr<br>Snack<br>Pollo,<br>Hígado<br>&amp; Grasa</span>
+            </div>
+            <h3>Pollo</h3>
+            <p class="price">$4.900</p>
+            <p class="card-text">Pollo, hígado vacuno y grasa vacuna. El de todos los paseos. Textura firme, sabor claro.</p>
+            <p class="meta">50 g · Perros</p>
+            <button class="btn block" type="button" data-add="pollo">Sumar</button>
+          </article>
+
+          <article class="card" data-id="higado" data-price="4900" data-stock="64" data-name="Hígado vacuno">
+            <div class="card-top">
+              <span>02</span>
+              <span class="stock" data-stock-label>En tanda</span>
+            </div>
+            <div class="pouch" style="--c:#347742; --ink:#fff">
+              <span class="pouch-brand">Mera</span>
+              <span class="pouch-lines">50 gr<br>Snack<br>Hígado<br>Vacuno</span>
+            </div>
+            <h3>Hígado</h3>
+            <p class="price">$4.900</p>
+            <p class="card-text">Solo hígado vacuno. Para cuando el premio tiene que ser eso, y nada más.</p>
+            <p class="meta">50 g · Perros</p>
+            <button class="btn block" type="button" data-add="higado">Sumar</button>
+          </article>
+
+          <article class="card" data-id="cogote" data-price="4900" data-stock="18" data-name="Cogote vacuno">
+            <div class="card-top">
+              <span>03</span>
+              <span class="stock" data-stock-label>En tanda</span>
+            </div>
+            <div class="pouch" style="--c:#F1CCCE; --ink:#000">
+              <span class="pouch-brand">Mera</span>
+              <span class="pouch-lines">50 gr<br>Snack<br>Cogote<br>Vacuno</span>
+            </div>
+            <h3>Cogote</h3>
+            <p class="price">$4.900</p>
+            <p class="card-text">Cogote vacuno deshidratado. Más duro, más largo de masticar, sabor profundo.</p>
+            <p class="meta">50 g · Perros</p>
+            <button class="btn block" type="button" data-add="cogote">Sumar</button>
+          </article>
+
+          <article class="card" data-id="taurina" data-price="4900" data-stock="52" data-name="Pollo, hígado y taurina">
+            <div class="card-top">
+              <span>04</span>
+              <span class="stock" data-stock-label>En tanda</span>
+            </div>
+            <div class="pouch" style="--c:#ACD0CE; --ink:#000">
+              <span class="pouch-brand">Mera</span>
+              <span class="pouch-lines">50 gr<br>Snack<br>Pollo,<br>Hígado<br>&amp; Taurina</span>
+            </div>
+            <h3>Taurina</h3>
+            <p class="price">$4.900</p>
+            <p class="card-text">El mix de pollo, hígado y grasa, con taurina. El sabor de esta tanda pensado para gatos.</p>
+            <p class="meta">50 g · Gatos</p>
+            <button class="btn block" type="button" data-add="taurina">Sumar</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soon" id="pronto">
+      <div class="wrap soon-grid">
+        <div>
+          <p class="index">Después de la tanda</p>
+          <h2>El de todos los días, en camino.</h2>
+          <p class="section-lede">El snack es el primer gesto. El alimento equilibrado —pollo, hígado, grasa, calabaza, calcio y omega 3— llega en sobre de 1 kg y 3 kg. Misma promesa, otra medida.</p>
+          <button class="btn" type="button" id="open-notify">Avisame cuando abra</button>
+        </div>
+        <figure class="formats">
+          <img src="assets/formatos.jpg" width="1274" height="799" alt="Tres doypacks blancos de tamaño chico, mediano y grande sobre una mesa.">
+          <ul>
+            <li><b>50 g</b><span>Snack · esta tanda</span></li>
+            <li><b>1 kg</b><span>Alimento · pronto</span></li>
+            <li><b>3 kg</b><span>Alimento · pronto</span></li>
+          </ul>
+        </figure>
+      </div>
+    </section>
+
+    <section class="pack" id="pack">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="index">02 / Armá tu tanda</p>
+          <h2>Tu pack.<br>Tus reglas.</h2>
+          <p class="section-lede">Elegí el tamaño y repartí los sobres entre los sabores. El precio por unidad no cambia. El mínimo de la tanda es de 4.</p>
+        </div>
+
+        <div class="pack-layout">
+          <div class="pack-main">
+            <p class="pack-label">01 · Tamaño</p>
+            <div class="sizes" role="group" aria-label="Tamaño del pack">
+              <button type="button" data-size="4" aria-pressed="false">4<span>para probar</span></button>
+              <button type="button" data-size="8" aria-pressed="true">8<span>la tanda</span></button>
+              <button type="button" data-size="16" aria-pressed="false">16<span>para guardar</span></button>
+            </div>
+
+            <p class="pack-label">02 · Combinación</p>
+            <ul class="flavors">
+              <li>
+                <span class="swatch" style="--c:#D26945"></span>
+                <span class="flavor-name">Pollo <small>Perros</small></span>
+                <span class="stepper">
+                  <button type="button" data-step="-1" data-flavor="pollo" aria-label="Menos pollo">−</button>
+                  <span data-qty="pollo">2</span>
+                  <button type="button" data-step="1" data-flavor="pollo" aria-label="Más pollo">+</button>
+                </span>
+              </li>
+              <li>
+                <span class="swatch" style="--c:#347742"></span>
+                <span class="flavor-name">Hígado <small>Perros</small></span>
+                <span class="stepper">
+                  <button type="button" data-step="-1" data-flavor="higado" aria-label="Menos hígado">−</button>
+                  <span data-qty="higado">2</span>
+                  <button type="button" data-step="1" data-flavor="higado" aria-label="Más hígado">+</button>
+                </span>
+              </li>
+              <li>
+                <span class="swatch" style="--c:#F1CCCE"></span>
+                <span class="flavor-name">Cogote <small>Perros</small></span>
+                <span class="stepper">
+                  <button type="button" data-step="-1" data-flavor="cogote" aria-label="Menos cogote">−</button>
+                  <span data-qty="cogote">2</span>
+                  <button type="button" data-step="1" data-flavor="cogote" aria-label="Más cogote">+</button>
+                </span>
+              </li>
+              <li>
+                <span class="swatch" style="--c:#ACD0CE"></span>
+                <span class="flavor-name">Taurina <small>Gatos</small></span>
+                <span class="stepper">
+                  <button type="button" data-step="-1" data-flavor="taurina" aria-label="Menos taurina">−</button>
+                  <span data-qty="taurina">2</span>
+                  <button type="button" data-step="1" data-flavor="taurina" aria-label="Más taurina">+</button>
+                </span>
+              </li>
+            </ul>
+            <p class="pack-progress" id="pack-progress">8 de 8</p>
+          </div>
+
+          <aside class="pack-summary">
+            <p class="pack-label">03 · Tu pack</p>
+            <p class="pack-total" id="pack-total">$39.200</p>
+            <p class="pack-ship" id="pack-ship">Envío gratis en CABA y GBA</p>
+            <ul class="pack-lines" id="pack-lines"></ul>
+            <button class="btn block" type="button" id="add-pack">Sumar este pack</button>
+            <button class="textbtn" type="button" id="share-pack">Copiar mi combo</button>
+            <p class="fine">Si venís recomendado, anotá el nombre en el pedido. En la entrega, los dos se llevan un snack de hígado.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="proceso">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="index">03 / Cómo se hace</p>
+          <h2>Despacio.<br>Se nota.</h2>
+          <p class="section-lede">Seis pasos, sin apuro y sin ingredientes de relleno. El deshidratado lleva unas 16 horas. Por eso el bocado queda firme.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <h3>Picado</h3>
+            <p>Pollo, hígado vacuno y grasa vacuna, según el sabor.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Mezclado</h3>
+            <p>Se incorporan los ingredientes definidos para esa fórmula.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Embutido</h3>
+            <p>El mix se embute para darle forma antes de secar.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Deshidratado</h3>
+            <p>Aproximadamente 16 horas, hasta que la pieza queda firme.</p>
+          </li>
+          <li>
+            <span>05</span>
+            <h3>Corte</h3>
+            <p>Una vez seco, se corta en piezas para el premio.</p>
+          </li>
+          <li>
+            <span>06</span>
+            <h3>Envasado</h3>
+            <p>Doypack de 50 g. Lugar fresco y seco, sobre bien cerrado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="beliefs">
+      <div class="wrap beliefs-grid">
+        <article>
+          <p class="index">01</p>
+          <h3>Transparencia.</h3>
+          <p>La etiqueta no adorna. Nombra lo que entra en el picado y se queda ahí.</p>
+        </article>
+        <article>
+          <p class="index">02</p>
+          <h3>Medida justa.</h3>
+          <p>50 gramos. Un premio de verdad, no una bolsa grande con poco adentro.</p>
+        </article>
+        <article>
+          <p class="index">03</p>
+          <h3>El día a día.</h3>
+          <p>No reemplaza la comida. Entra en el paseo, en el bolsillo, en el rato en casa.</p>
+        </article>
+        <article>
+          <p class="index">04</p>
+          <h3>Sin freezer.</h3>
+          <p>Se guarda seco. Abierto, el cierre tiene que quedar bien hecho.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="casa" id="casa">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="index">04 / En casa</p>
+          <h2>Para el día<br>que ya empezó.</h2>
+        </div>
+        <div class="stories">
+          <figure>
+            <img src="assets/ojo.jpg" width="1076" height="675" alt="Ojo y oreja de un perro salpicado, de muy cerca.">
+            <figcaption>
+              <strong>El del paseo</strong>
+              <span>Uno en el bolsillo. Se entrega cuando dobla la esquina, no antes.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/lengua.jpg" width="721" height="875" alt="Hocico de un perro lamiéndose.">
+            <figcaption>
+              <strong>El que insiste</strong>
+              <span>Hígado, si hace falta negociar. Cogote, si hace falta que dure.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gato.jpg" width="713" height="892" alt="Un gato atigrado mira hacia arriba, con el cielo detrás.">
+            <figcaption>
+              <strong>El que no negocia</strong>
+              <span>Taurina es el de ellos. Mismo oficio, otra boca.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="index">05 / Antes de pedir</p>
+          <h2>Todo claro.<br>Todo mero.</h2>
+          <p class="section-lede">Si falta algo, dejalo en la nota del pedido. Del otro lado hay una persona, no un buzón.</p>
+        </div>
+        <div class="questions">
+          <details open>
+            <summary>¿Qué es un snack Mera?</summary>
+            <p>Un premio deshidratado. Según el sabor: pollo, hígado vacuno, grasa vacuna, cogote o taurina. La idea es que la etiqueta alcance para saber qué estás dando.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto duran?</summary>
+            <p>Cerrados, en un lugar fresco y seco. No van al freezer. Una vez abierto, el sobre tiene que quedar bien cerrado entre premio y premio.</p>
+          </details>
+          <details>
+            <summary>¿Cuándo se entrega la tanda 01?</summary>
+            <p>Entre el jueves 13 y el viernes 14 de noviembre, en CABA y GBA. La entrega se coordina por el WhatsApp que dejes en el pedido.</p>
+          </details>
+          <details>
+            <summary>¿Cuál es el mínimo?</summary>
+            <p>Cuatro snacks. Podés combinar sabores en el armador. Desde ocho sobres, el envío es gratis en CABA y GBA.</p>
+          </details>
+          <details>
+            <summary>¿Reemplaza la comida del día?</summary>
+            <p>No. Se ofrece como premio, dentro de una alimentación equilibrada. Conviene adaptar la cantidad al tamaño, la edad y lo que se mueve, y dejar siempre agua fresca.</p>
+          </details>
+          <details>
+            <summary>¿Qué ingredientes tiene cada uno?</summary>
+            <p>Pollo: pollo, hígado vacuno y grasa vacuna. Hígado: hígado vacuno. Cogote: cogote vacuno. Taurina, para gatos: pollo, hígado vacuno, grasa vacuna y taurina.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="trade">
+      <div class="wrap trade-inner">
+        <div>
+          <p class="index">Comercios</p>
+          <h2>¿Petshop, café o veterinaria?</h2>
+          <p>Hay cajas de la tanda para puntos de venta. Contanos el local y armamos una propuesta con los sabores que te sirvan.</p>
+        </div>
+        <button class="btn btn-dark" type="button" id="open-trade">Consultar mayorista</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="logo">Mera</p>
+        <p>Alimento equilibrado para perros y gatos.<br>Buenos Aires, Argentina.</p>
+      </div>
+      <nav aria-label="Pie">
+        <a href="#menu">El menú</a>
+        <a href="#pack">Tu pack</a>
+        <a href="#proceso">Cómo se hace</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <p class="footer-mark">Hecho en Arg.<br>© 2026 Mera</p>
+    </div>
+    <div class="wrap footer-top">
+      <a href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1" hidden>
+    <div class="drawer-bar" aria-hidden="true"></div>
+    <header class="drawer-head">
+      <h2 id="drawer-title">Tu carrito</h2>
+      <button class="icon-btn" type="button" id="close-cart" aria-label="Cerrar carrito">Cerrar</button>
+    </header>
+    <div class="drawer-body" id="drawer-body">
+      <div id="cart-view">
+        <p class="empty" id="cart-empty">Todavía no hay nada en la tanda.</p>
+        <ul class="cart-lines" id="cart-lines"></ul>
+        <div class="cart-foot" id="cart-foot" hidden>
+          <div class="subtotal">
+            <span>Total</span>
+            <strong id="cart-total">$0</strong>
+          </div>
+          <p class="fine" id="min-note">El mínimo de la tanda es de 4 snacks.</p>
+          <form id="checkout">
+            <label>Nombre
+              <input name="nombre" autocomplete="name" required maxlength="80">
+            </label>
+            <label>Barrio o zona
+              <input name="zona" autocomplete="address-level3" required maxlength="80" placeholder="Ej. Palermo, Vicente López">
+            </label>
+            <label>WhatsApp
+              <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required minlength="8" maxlength="20" placeholder="11 0000 0000">
+            </label>
+            <label>¿Quién te recomendó? <span class="optional">opcional</span>
+              <input name="recomendado" maxlength="80">
+            </label>
+            <label>Nota <span class="optional">opcional</span>
+              <textarea name="nota" rows="2" maxlength="240"></textarea>
+            </label>
+            <p class="form-error" id="form-error" hidden></p>
+            <button class="btn block" type="submit" id="checkout-btn">Confirmar pedido</button>
+          </form>
+        </div>
+      </div>
+      <div id="thanks" hidden>
+        <p class="kicker">Tanda 01</p>
+        <h3>Pedido armado.</h3>
+        <p>El número es <strong id="order-id"></strong>. Copiá el resumen y envialo por WhatsApp para coordinar la entrega del 13 y 14 de noviembre.</p>
+        <pre id="order-summary"></pre>
+        <button class="btn block" type="button" id="copy-order">Copiar resumen</button>
+        <button class="textbtn" type="button" id="another-order">Armar otro pedido</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <button class="icon-btn modal-close" type="button" id="close-modal" aria-label="Cerrar">Cerrar</button>
+    <p class="kicker" id="modal-kicker">Mera</p>
+    <h2 id="modal-title">Avisame</h2>
+    <p id="modal-copy"></p>
+    <form id="lead-form">
+      <label>Nombre
+        <input name="nombre" autocomplete="name" required maxlength="80">
+      </label>
+      <label>WhatsApp
+        <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required minlength="8" maxlength="20">
+      </label>
+      <label id="local-field">Local o zona
+        <input name="local" maxlength="80">
+      </label>
+      <p class="form-error" id="lead-error" hidden></p>
+      <button class="btn block" type="submit" id="lead-submit">Dejar el aviso</button>
+    </form>
+    <p class="lead-done" id="lead-done" hidden>Quedó anotado. Te escribimos por ahí cuando corresponda.</p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
